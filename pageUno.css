@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: rgb(2, 2, 2);
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
@@ -18,10 +18,10 @@ body {
 }
 
 header {
-  background-image: url("https://images.pexels.com/photos/5836/yellow-metal-design-decoration.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url(img/hero.jpeg);
   background-size: cover;
   background-position: center center;
-  color: white;
+  color: rgba(0, 0, 0, 0.507);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -29,17 +29,17 @@ header {
 }
 
 .content {
+  font-family: "Courier New", Courier, monospace;
   font-size: 2rem;
-  margin: auto;
+  margin-top: auto;
   max-width: 100%;
 }
 
 .content h1 {
-  color: #000000;
-  margin-bottom: 0;
+  color: #ffffff;
 }
 .content p {
-  color: #1f1f1e;
+  color: #ffffff;
 }
 
 nav {
@@ -48,10 +48,10 @@ nav {
 }
 
 nav .logo {
-  font-size: 2.5rem;
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.521);
-  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
 }
 
 nav ul {
@@ -62,9 +62,10 @@ nav ul {
 
 nav li a {
   color: rgb(7, 7, 7);
-  padding: 1rem;
+  padding: 1.5rem;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.521);
+  border-radius: 70px;
 }
 nav li a:hover {
   background-color: rgba(255, 255, 255, 0.753);
@@ -72,8 +73,8 @@ nav li a:hover {
 }
 
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.233);
+  color: rgb(0, 0, 0);
   padding: 1rem;
 }
 
@@ -86,7 +87,7 @@ footer ul {
 }
 
 footer strong {
-  color: #ffe600;
+  color: #000000;
 }
 
 footer p {
@@ -95,27 +96,34 @@ footer p {
 
 @media screen and (max-width: 700px) {
   .content {
-    font-size: 1.4rem;
-    margin: 2rem auto 0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2rem;
+    margin-top: auto;
+    max-width: 100%;
   }
-  nav .logo {
-    font-size: 2.5rem;
-    color: #000;
-    background-color: rgba(255, 255, 255, 0.521);
-    border-radius: 10px;
-    height: 100px;
-  }
-
-  nav ul {
+  nav {
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
   }
 
-  nav li:not(:last-child) {
-    margin-bottom: 1rem;
+  nav .logo {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
   }
 
-  nav .highlight {
-    display: none;
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  nav li a {
+    color: rgb(7, 7, 7);
+    padding: 1rem;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.521);
   }
 
   footer ul {
